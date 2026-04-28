@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL ABOUT CET - College Admission Guide</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <!--
+
+TemplateMo 595 3d coverflow
+x
+https://templatemo.com/tm-595-3d-coverflow
+
+-->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo-container">
+            <div class="logo">
+                <img src="images/cet logo.png" alt="CET Logo" width="50">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <div class="logo-text">ALL ABOUT CET</div>
+        </a>
+
+        <nav class="main-menu" id="mainMenu">
+            <a href="#home" class="menu-item active">Home</a>
+            <a href="#about" class="menu-item">About CET</a>
+            <a href="#vote" class="menu-item">Vote</a>
+            <a href="#contact" class="menu-item">Contact</a>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">Welcome to ALL ABOUT CET</h2>
+                <p id="current-description">
+                    The College of Engineering and Technology (CET) offers high-quality
+                    technology and engineering programs designed to prepare students
+                    for the modern digital world.
+                </p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="images/panagrambak.jpg" alt="Panagrambak" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading">
+                            <img src="images/intrams.jpg" alt="Intramural Events" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading">
+                            <img src="images/breadboarding.jpg" alt="Lake Reflection" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="3">
+                        <div class="cover image-loading">
+                            <img src="images/mr and ms cet.jpg" alt="MR and MS CET" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="4">
+                        <div class="cover image-loading">
+                            <img src="images/dean.jpg" alt="CET Dean" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="5">
+                        <div class="cover image-loading">
+                            <img src="images/matias.jpg" alt="Mr. Ifsu-Potia" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="6">
+                        <div class="cover image-loading">
+                            <img src="images/IT Lympics.jpg" alt="IT Lympics" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+
+                <!-- Play/Pause Button -->
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>About CET Day</h2>
+                <p>CET Day is an annual celebration of academic excellence, innovation, leadership, and student
+                    achievement within the College of Engineering and Technology.</p>
+            </div>
+
+            <div class="about-main">
+                <div class="about-visual">
+                    <div class="showcase-display">
+                        <div class="showcase-main">
+                            <div class="corner-decoration top-left"></div>
+                            <div class="corner-decoration bottom-right"></div>
+
+                            <div class="showcase-logo">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="10" y="25" width="15" height="50" fill="white"
+                                        transform="rotate(-15 17.5 50)" opacity="0.9" />
+                                    <rect x="35" y="15" width="15" height="70" fill="white" />
+                                    <rect x="60" y="25" width="15" height="50" fill="white"
+                                        transform="rotate(15 67.5 50)" opacity="0.9" />
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="2"
+                                        opacity="0.3" />
+                                </svg>
+                            </div>
+
+                            <h3 class="showcase-title">Celebrating CET Excellence</h3>
+                            <p class="showcase-subtitle">Highlighting BSCpE and BSIT programs, competitions, leadership,
+                                and innovation.</p>
+                            <div class="showcase-badges">
+                                <a href="https://www.facebook.com/ifsupotiacet" target="_blank"
+                                    rel="noopener noreferrer" class="badge">HTML5</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                                    rel="noopener noreferrer" class="badge">CSS3</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                                    rel="noopener noreferrer" class="badge">JavaScript</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                                    target="_blank" rel="noopener noreferrer" class="badge">Responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="about-info">
+                    <h3>What is CET Day?</h3>
+
+                    <p>
+                        CET Day is the annual college celebration of the College of Engineering and Technology.
+                        It is a day where students, faculty, and staff come together to celebrate unity,
+                        excellence, talent, leadership, and innovation.
+                    </p>
+                    <p><span class="first-letter">E</span>very CET Day is the annual college celebration of the College
+                        of Engineering and Technology. It is a day where students, faculty, and staff come together to
+                        celebrate unity, excellence, talent, leadership, and innovation.</p>
+
+                    <p>
+                        The celebration highlights the strengths of the two major programs:
+                        <b>BS in Computer Engineering (BSCpE)</b> and
+                        <b>BS in Information Technology (BSIT)</b>.
+                        Each program proudly showcases its skills, creativity, and competitive spirit.
+                    </p>
+
+                    <h3>Contested Activities & Major Events</h3>
+
+                    <ul class="feature-list">
+                        <li>Mr. and Ms. CET Pageant</li>
+                        <li>Visual Arts</li>
+                        <li>Programming</li>
+                        <li>Mobile Legends Tournament</li>
+                        <li>Promotional Video Competition</li>
+                        <li>Mr. & Ms. CET Pageant</li>
+                        <li>Cultural Games</li>
+                    </ul>
+
+                    <p>
+                        CET Day is more than just a celebration — it is a symbol of teamwork,
+                        determination, and the passion of future engineers and IT professionals.
+                        It strengthens camaraderie, builds confidence, and inspires students
+                        to pursue excellence in both academics and life.
+                    </p>
+
+                    <a href="#contact" class="cta-button">
+                        Join the CET Celebration
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                    </a>
+
+                    <a href="#contact" class="cta-button">
+                        Explore CET Programs
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="stats-section">
+
+                <div class="stat-item slytherin">
+                    <h3>Slytherin</h3>
+                    <img src="images/Slytherin.png" width="300" height="300">
+                </div>
+                <div class="stat-item gryffindor">
+                    <h3>Gryffindor</h3>
+                    <img src="images/Gryffindor.png" width="300" height="300">
+                </div>
+
+                <div class="stat-item ravenclaw">
+                    <h3>Ravenclaw</h3>
+                    <img src="images/Ravenclaw.png" width="300" height="300">
+                </div>
+
+                <div class="stat-item hufflepuff">
+                    <h3>Hufflepuff</h3>
+                    <img src="images/Hufflepuff.png" width="300" height="300">
+                </div>
+    </section>
+
+    <!-- Vote Section -->
+    <section id="vote" class="section vote-section">
+
+        <div class="vote-header">
+            <h2>Vote Your Favorite Delegate</h2>
+            <p>Select your preferred candidate for Mr. & Ms. CET</p>
+        </div>
+
+        <div class="vote-grid">
+
+            <div class="candidate">
+                <span class="candidate-number">1</span>
+                <img src="images/Ataman.jpg">
+                <h3>Migz Bryle Ataman</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673735360036&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">1</span>
+                <img src="images/Tayaban.jpg">
+                <h3>May Tayaban</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo/?fbid=1465673488693394&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">2</span>
+                <img src="images/Lausan.jpg">
+                <h3>Ian Jones Lausan</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673812026695&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">2</span>
+                <img src="images/Domingo.jpg">
+                <h3>Kisha Mae Domingo</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673575360052&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">3</span>
+                <img src="images/Chalinat.jpg">
+                <h3>Sejei Chalinat</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673798693363&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">3</span>
+                <img src="images/Bahuyang.jpg">
+                <h3>Aljef Joy Bahuyang</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673618693381&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">4</span>
+                <img src="images/Polig.jpg">
+                <h3>Angelo Karl Polig</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673862026690&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">4</span>
+                <img src="images/Tangid.jpg">
+                <h3>Hwawan Tangid</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673595360050&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">5</span>
+                <img src="images/Hidalgo.jpg">
+                <h3>Bryze Hidalgo</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673905360019&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">5</span>
+                <img src="images/Longatan.jpg">
+                <h3>Iriz Caren Longatan</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673772026699&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+
+            <div class="candidate">
+                <span class="candidate-number">6</span>
+                <img src="images/Ballesteros.jpg">
+                <h3>Justin Ballesteros</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo/?fbid=1465673498693393&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">6</span>
+                <img src="images/Dumawin.jpg">
+                <h3>Lhirrian Dumawin</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673718693371&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">7</span>
+                <img src="images/Bohengon.jpg">
+                <h3>Nissi Bohengon</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo?fbid=1465673932026683&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <span class="candidate-number">7</span>
+                <img src="images/Bacuyag.jpg">
+                <h3>Bernalyn Bacuyag</h3>
+                <button
+                    onclick="window.open('https://www.facebook.com/photo/?fbid=1465673475360062&set=pcb.1465674128693330')">Vote</button>
+            </div>
+
+
+        </div>
+
+        </div>
+        </div>
+        <div class="vote-instructions">
+
+            <div class="gold-divider"></div>
+
+            <h3>TO VOTE</h3>
+
+            <p class="vote-main">
+                Identify your preferred <b>Mr. & Ms. CET Delegate</b>
+            </p>
+
+            <div class="vote-steps">
+
+                <p>Click the <b>VOTE</b> button on your chosen candidate.</p>
+
+                <p>You will be redirected to the official Facebook photo.</p>
+
+                <p>React to the photo to cast your vote.</p>
+
+            </div>
+
+            <div class="gold-divider"></div>
+
+            <p class="vote-note">
+                Delegates with the highest number of reactions will be fast-tracked
+                to the <b>People's Choice Award</b>.
+            </p>
+
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>Contact the College of Engineering and Technology</h2>
+                <p>For inquiries about CET programs, activities, and CET Day events, feel free to reach out to us.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <h3>Let's Connect</h3>
+                    <p>We're here to help bring your vision to life. Whether you need a stunning gallery, a complete
+                        website redesign, or custom development work, we'd love to hear from you.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>cet@ifsu.edu.ph</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Potia, Alfonsolista, Ifugao</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>School Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM PST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-buttons">
+                            <a href="" class="social-btn" title="Facebook">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2026 College of Engineering and Technology. All rights reserved. | Designed by <a
+                    href="https://www.facebook.com/charmelgraceaban29" target="_blank" rel="noopener noreferrer">Charmel
+                    Grace B. Aban</a>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy" onclick="event.preventDefault(); alert('Privacy Policy page would go here');">Privacy
+                    Policy</a>
+                <a href="#terms" onclick="event.preventDefault(); alert('Terms of Service page would go here');">Terms
+                    of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
+
+    <script src="templatemo-3d-coverflow-scripts.js"></script>
+
+</body>
+
+</html>
